@@ -36,3 +36,24 @@ background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219,
     align-items: center;
     transform: translate(-50%, -30%);
 }
+
+
+.snowcap {
+    background: white;
+    clip-path: polygon(
+        -30% 100%,
+        10% 85%,
+        25% 90%,
+        40% 80%,
+        60% 85%,
+        75% 75%,
+        90% 80%,
+        130% 100%,
+        50% 0%
+    );
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -60%);
+}
