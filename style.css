@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.backdrop {
+    background: #bed6e8;
+background: linear-gradient(180deg, rgba(190, 214, 232, 1) 0%, rgba(213, 213, 245, 1) 100%);
+    clip-path: circle(200px);
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: center;
+    border-color: rgba(111,111,111,0.2) transparent transparent;
+}
+
+.mountain {
+    background: #54bbeb;
+background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219, 1) 100%);
+    clip-path: polygon(
+        -30% 100%,
+        130% 100%,
+        50% 0%
+    );
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    align-items: center;
+    transform: translate(-50%, -30%);
+}
