@@ -9,6 +9,10 @@ body {
 
 }
 
+.mountain-container {
+    position: relative;
+}
+
 .backdrop {
     background: #bed6e8;
 background: linear-gradient(180deg, rgba(190, 214, 232, 1) 0%, rgba(213, 213, 245, 1) 100%);
@@ -56,4 +60,68 @@ background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219,
     position: absolute;
     align-items: center;
     transform: translate(-50%, -60%);
+}
+
+.cloud1 {
+    width: 116px;
+    height: 40px;
+    background: aqua;
+    position: absolute;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    top: 530px;
+    left:800px;
+}
+
+.cloud1:after, .cloud1:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud1::after{
+    width:33px;
+    height:33px;
+    top:-20px;
+    left:20px;
+}
+.cloud1::before{
+    width:60px;
+    height:60px;
+    top: -30px;
+    left:40px;
+}
+
+.cloud2 {
+    width: 116px;
+    height: 40px;
+    background: aqua;
+    position: absolute;
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius:100px;
+    top: 500px;
+    left:1000px;
+}
+
+.cloud2:after, .cloud2:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    background: inherit;
+    border-radius: inherit;
+}
+
+.cloud2::after{
+    width:33px;
+    height:33px;
+    top:-20px;
+    left:20px;
+}
+.cloud2::before{
+    width:60px;
+    height:60px;
+    top: -30px;
+    left:40px;
 }
