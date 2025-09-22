@@ -71,6 +71,8 @@ background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219,
     border-radius:100px;
     top: 530px;
     left:800px;
+
+    animation: anim2 3s ease-in-out infinite;
 }
 
 .cloud1:after, .cloud1:before {
@@ -94,6 +96,20 @@ background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219,
     left:40px;
 }
 
+@keyframes anim1 {
+    0%   { transform: translateX(0px); }
+    50%  { transform: translateX(20px); }
+    100% { transform: translateX(0px); }
+
+}
+
+@keyframes anim2 {
+    0%   { transform: translateX(0px); }
+    50%  { transform: translateX(-20px); }
+    100% { transform: translateX(0px); }
+
+}
+
 .cloud2 {
     width: 116px;
     height: 40px;
@@ -103,6 +119,8 @@ background: linear-gradient(90deg, rgba(84, 187, 235, 1) 33%, rgba(107, 90, 219,
     border-radius:100px;
     top: 500px;
     left:1000px;
+
+    animation: anim1 3s ease-in-out infinite;
 }
 
 .cloud2:after, .cloud2:before {
